@@ -19,7 +19,8 @@ Nessa atividade foram adotadas as boas práticas:
 2. A construção centralizada dos componentes garante a reutilização de código e garante um ponto único de manutenção;
 3. Foi feita a reutilização de classes para tarefas comuns, por exemplo: `SimpleAction` exibe um alerta, onde a mensagem é recebida no construtor, e essa classe foi utilizada em mais de um botão;
 4. Aproveitando os recursos de OO foi aplicada a extensão de uma classe agregando novas funcionalidades. A classe `DeleteAction` extende de `ClearAction`, e nela foi incluida uma confirmação do usuário antes de performar a ação da classe base;
-5. Foi adotado um único padrão de nomenclatura para variáveis e métodos em todo o código. 
+5. Foi adotado um único padrão de nomenclatura para variáveis e métodos em todo o código;
+6. Para os componentes visuais que possuem um JLabel o método `setLabelFor` foi utilizado seguindo [as recomendações](https://docs.oracle.com/javase/tutorial/uiswing/components/label.html) para melhorar a acessibilidade do programa.  
 
 # Compilando e executando
 A atividade foi desenvolvida utilizando o Java SE Development Kit 8. O SDK precisa estar instalado e o caminho do SDK precisa estar configurado no PATH das variáveis de ambiente.
